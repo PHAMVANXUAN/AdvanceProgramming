@@ -8,7 +8,7 @@ namespace BookManagementSystem.Model
 {
     internal class Cooking : Book
     {
-        public Cooking(string iD, string name, string author, int yOP, string type) : base(iD, name, author, yOP, type)
+        public Cooking(string iD, string name, string author, string yOP, string type) : base(iD, name, author, yOP, type)
         {
             this.Type = "Cooking";
         }

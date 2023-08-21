@@ -8,7 +8,7 @@ namespace BookManagementSystem.Model
 {
     internal class IT : Book
     {
-        public IT(string iD, string name, string author, int yOP, string type) : base(iD, name, author, yOP, type)
+        public IT(string iD, string name, string author, string yOP, string type) : base(iD, name, author, yOP, type)
         {
             this.Type = "IT";
         }

@@ -25,7 +25,7 @@ namespace BookManagementSystem
             Console.WriteLine("Input Book's Author");
             String author = Console.ReadLine();
             Console.WriteLine("Input Book's YOP");
-            int yop = int.Parse(Console.ReadLine());
+            string yop = Console.ReadLine();
             Console.WriteLine("Choose Book Type");
             Console.WriteLine("1. Finance");
             Console.WriteLine("2. Cooking");
@@ -94,11 +94,8 @@ namespace BookManagementSystem
 
             Console.WriteLine("Enter new Publish Years");
             string newYOP = Console.ReadLine();
-            int yop;
-            if (int.TryParse(newYOP, out yop))
-            {
-                book.yop = yop;
-            }
+            book.yop = newYOP;
+            
             string BookType = null;
 
             Console.WriteLine("Enter new Category");

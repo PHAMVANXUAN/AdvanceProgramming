@@ -11,10 +11,10 @@ namespace BookManagementSystem.Model
         protected String ID;
         protected String Name;
         protected String Author;
-        protected int YOP;
+        protected string YOP;
         protected String Type;
 
-        public Book(string iD, string name, string author, int yOP, string type)
+        public Book(string iD, string name, string author, string yOP, string type)
         {
             ID = iD;
             Name = name;
@@ -43,7 +43,7 @@ namespace BookManagementSystem.Model
             set { Author = value; }
         }
 
-        public int yop
+        public string yop
         {
             get { return YOP; }
             set { YOP = value; }
